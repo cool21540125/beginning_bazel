@@ -20,7 +20,7 @@ java_test(
     srcs = ["IntMultiplierTest.java"],
     deps = [
         ":LibraryExample",
-        "//ch3/third_party:junit4",
+        "//third_party:junit4",
     ],
     test_class = "IntMultiplierTest",
 )
