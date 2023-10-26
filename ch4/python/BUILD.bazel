@@ -1,3 +1,13 @@
+load("@io_bazel_rules_python//python:defs.bzl", "py_binary")
+
+py_binary(
+    name = "hello_world_python",
+    main = "hello_world.py",
+    srcs = [
+        "hello_world.py",
+    ],
+)
+
 py_library(
     name = "calculator",
     srcs = [
