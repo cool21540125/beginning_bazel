@@ -36,3 +36,13 @@ java_binary(
         "//third_party:gson",
     ]
 )
+
+load("@rules_python//python:defs.bzl", "py_binary")
+
+py_binary(
+    name = "echo_client_py",
+    main = "echo_client.py",
+    srcs = [
+        "echo_client.py",
+    ],
+)
