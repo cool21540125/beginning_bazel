@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package transmission_object;
+package example.com.transmission_object;
 
 message TransmissionObject {
     float value = 1;

@@ -1,5 +1,9 @@
 # 原本 built-in 在 bazel, 後來拆分出去了
 load("@rules_proto//proto:defs.bzl", "proto_library")
+
+# (身為 Google 搞除來的 golang/protobuf/bazel, 連 Java 都已經 built-in 了, 這居然要先做 load 才能用)
+load("@io_bazel_rules_go//proto:def.bzl", "go_proto_library")
+
 proto_library(
     name = "transmission_object_proto",
     srcs = [
@@ -7,7 +11,7 @@ proto_library(
     ],
 )
 
-# 起碼在 6.4.0, 這還是 built-in
+#   (起碼在 6.4.0, 這還是 built-in, 因此不需預先 load)
 java_proto_library(
     name = "transmission_object_java_proto",
     deps = [
@@ -24,4 +28,11 @@ java_binary(
     deps = [
         ":transmission_object_java_proto",
     ],
+)
+
+# (與原著不同) package 路徑起碼必須要有 . 或是 / 開頭
+go_proto_library(
+    name = "transmission_object_go_proto",
+    proto = ":transmission_object_proto",
+    importpath = "example.com.transmission_object",
 )

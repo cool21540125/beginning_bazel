@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import transmission_object.TransmissionObjectOuterClass.TransmissionObject;
+import example.com.transmission_object.TransmissionObjectOuterClass.TransmissionObject;
 
 public class EchoClient {
 
