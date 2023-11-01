@@ -1,3 +1,3 @@
-[submodule "examples"]
-	path = examples
-	url = git@github.com:bazelbuild/examples.git
+[submodule "bazelbuild_examples"]
+	path = bazelbuild_examples
+	url = git@github.com:cool21540125/bazelbuild_examples.git
