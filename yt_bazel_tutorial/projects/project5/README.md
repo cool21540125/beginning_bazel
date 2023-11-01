@@ -7,5 +7,11 @@ bazel run @yarn//:yarn
 
 
 ### 
+bazel query @npm//...
 
+
+### 
+bazel test //...
+
+bazel run //node_web
 ```

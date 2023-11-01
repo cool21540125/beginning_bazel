@@ -1,0 +1,21 @@
+load("@npm//@bazel/jasmine:index.bzl", "jasmine_node_test")
+
+filegroup(
+    name = "node_calculator",
+    srcs = [
+        "calculator.js",
+    ],
+    visibility = ["//visibility:public"],
+    # 這邊還不是很懂(暫時亂填)
+    # visibility = ["//projects/project7:__pkg__"],
+)
+
+jasmine_node_test(
+    name = "calculator_test",
+    srcs = [
+        "calculator.spec.js"
+    ],
+    data = [
+        ":node_calculator"
+    ],
+)
