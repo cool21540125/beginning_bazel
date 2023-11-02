@@ -10,6 +10,6 @@ bazel test //projects/project2/calculator:calculator_test
 
 
 ### py_web
-bazel build //projects/project2/py_web:flask_run
-bazel run //projects/project2/py_web:flask_run
+bazel build projects/project2/my-python-app:main
+bazel run projects/project2/my-python-app:main
 ```

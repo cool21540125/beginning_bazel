@@ -3,7 +3,10 @@ py_library(
     srcs = [
         "calculator.py",
     ],
-    visibility = ["//visibility:public"],
+    # visibility = ["//visibility:public"],
+    visibility = [
+        "//projects/project2/my-python-app:__pkg__",
+    ]
 )
 
 py_test(
@@ -14,5 +17,4 @@ py_test(
     deps = [
         "//projects/project2/calculator:calculator",
     ],
-    # main = "calculator_test.py"
 )
