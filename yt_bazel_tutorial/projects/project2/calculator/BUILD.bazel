@@ -1,5 +1,5 @@
 py_library(
-    name = "calc",
+    name = "calculator",
     srcs = [
         "calculator.py",
     ],
@@ -7,12 +7,12 @@ py_library(
 )
 
 py_test(
-    name = "calc_test",
+    name = "calculator_test",
     srcs = [
         "calculator_test.py",
     ],
     deps = [
-        "//projects/projectB/calculator:calc",
+        "//projects/project2/calculator:calculator",
     ],
-    main = "calculator_test.py"
+    # main = "calculator_test.py"
 )

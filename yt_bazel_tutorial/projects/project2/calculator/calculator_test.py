@@ -1,5 +1,5 @@
 import unittest
-from projects.projectB.calculator.calculator import Calculator
+from projects.project2.calculator.calculator import Calculator
 
 
 class TestSum(unittest.TestCase):
@@ -9,7 +9,7 @@ class TestSum(unittest.TestCase):
 
     def test_sum2(self):
         cc = Calculator()
-        self.assertEqual(cc.add(5, 6), 11)
+        self.assertEqual(cc.add(51, 49), 100)
 
 
 if __name__ == "__main__":
