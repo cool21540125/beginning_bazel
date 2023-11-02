@@ -4,12 +4,12 @@
 cd yt_bazel_tutorial
 
 
-### py_calculator
-bazel build //projects/project2/calculator:calculator
-bazel test //projects/project2/calculator:calculator_test
+### python_calculator
+bazel build //projects/project2/python_calculator:calculator
+bazel test //projects/project2/python_calculator:calculator_test
 
 
-### py_web
+### my-python-app
 bazel build projects/project2/my-python-app:main
 bazel run projects/project2/my-python-app:main
 ```

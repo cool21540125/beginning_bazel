@@ -1,4 +1,4 @@
-from projects.project2.calculator.calculator import Calculator
+from projects.project2.python_calculator.calculator import Calculator
 from flask import Flask
 from random import randint
 import sys

@@ -15,6 +15,6 @@ py_test(
         "calculator_test.py",
     ],
     deps = [
-        "//projects/project2/calculator:calculator",
+        "//projects/project2/python_calculator:calculator",
     ],
 )

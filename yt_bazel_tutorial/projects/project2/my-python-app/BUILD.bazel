@@ -7,7 +7,7 @@ py_binary(
         "main.py",
     ],
     deps = [
-        "//projects/project2/calculator:calculator",
+        "//projects/project2/python_calculator:calculator",
         requirement("Flask"),
     ],
 )
