@@ -6,9 +6,9 @@ filegroup(
         "calculator.js",
     ],
     # visibility = ["//visibility:public"],
-    # visibility = [
-    #     "//projects/project5/node_web:__pkg__",
-    # ],
+    visibility = [
+        "//projects/project5/node_web:__pkg__",
+    ],
 )
 
 jasmine_node_test(

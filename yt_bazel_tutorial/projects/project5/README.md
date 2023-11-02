@@ -2,12 +2,15 @@
 - 從頭到尾都看得不是很懂=.=
 
 ```bash
-### 
+cd yt_bazel_tutorial
+
+### 依照 package.json 做 yarn install 並生成 yarn.lock
 bazel run @yarn//:yarn
 
 
 ### 
-bazel query @npm//...
+bazel query @npm//... | grep jasmine
+bazel query @npm//... | grep express
 
 
 ### 
@@ -15,5 +18,6 @@ bazel test //projects/project5/node_calculator/...
 bazel test //projects/...
 
 
-bazel run //node_web
+bazel build //projects/project5/node_web
+bazel run //projects/project5/node_web
 ```

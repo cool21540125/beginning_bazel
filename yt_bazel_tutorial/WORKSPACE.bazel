@@ -45,8 +45,8 @@ node_repositories()
 # bazel run @yarn//:yarn
 yarn_install(
     name = "npm",
-    package_json = "//projects/project5:package.json",
-    yarn_lock = "//projects/project5:yarn.lock",
+    package_json = "//:package.json",
+    yarn_lock = "//:yarn.lock",
 )
 
 
