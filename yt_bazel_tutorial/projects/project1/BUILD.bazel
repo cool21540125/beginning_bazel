@@ -1,0 +1,7 @@
+
+genrule(
+    name = "foo",
+    srcs = [],
+    outs = ["foo.txt"],
+    cmd = "sleep 5 && echo 'Hello World! 剛剛我睡了 5 秒' > $@",
+)
