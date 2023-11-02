@@ -1,3 +1,6 @@
 [submodule "bazelbuild_examples"]
 	path = bazelbuild_examples
 	url = git@github.com:cool21540125/bazelbuild_examples.git
+[submodule "codelabs"]
+	path = codelabs
+	url = git@github.com:cool21540125/codelabs.git
