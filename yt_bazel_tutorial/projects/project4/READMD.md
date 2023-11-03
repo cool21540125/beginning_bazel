@@ -18,15 +18,21 @@ cd ../..
 cd yt_bazel_tutorial
 
 ### 自寫 library & test
-bazel test //projects/project4/go_hello_world:go_hello_world_test
-bazel build //projects/project4/go_hello_world
+bazel test //projects/project4/go_calculator:go_calculator_test
+bazel test //projects/project4/...
+bazel test //projects/...
+
+### build
+bazel build //projects/project4/go_calculator
+bazel build //projects/project4/go_web:go_web
+bazel build //projects/project4/...
+bazel build //projects/...
 
 
 ### query / analyze
 bazel query @com_github_gorilla_mux//...
 
 
-### mux
-bazel build //projects/project4/go_web:go_web
+### run web
 bazel run //projects/project4/go_web
 ```

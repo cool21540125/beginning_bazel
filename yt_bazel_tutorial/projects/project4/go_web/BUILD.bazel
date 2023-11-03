@@ -6,7 +6,8 @@ go_binary(
         "main.go",
     ],
     deps = [
-        "//projects/project4/go_hello_world:go_hello_world",
+        # "//projects/project4/go_hello_world:go_hello_world",
+        "//projects/project4/go_calculator:go_calculator",
         "@com_github_gorilla_mux//:mux",
     ],
 )

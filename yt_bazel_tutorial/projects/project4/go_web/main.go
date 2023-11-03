@@ -2,17 +2,22 @@ package main
 
 import (
 	"log"
+	"math/rand"
 	"net/http"
+	"strconv"
 
-	"project4/go_hello_world"
+	"project4/go_calculator"
 
 	"github.com/gorilla/mux"
 )
 
 func YourHandler(w http.ResponseWriter, r *http.Request) {
 	log.Println("Received request")
-	w.Write([]byte(go_hello_world.HelloWorld()))
-	w.Write([]byte("Hello World"))
+	rnd1 := rand.Intn(100)
+	rnd2 := rand.Intn(100)
+
+	msg := "我很懷疑你真的不知道 " + strconv.Itoa(rnd1) + " + " + strconv.Itoa(rnd2) + " = " + strconv.Itoa(go_calculator.Add(rnd1, rnd2))
+	w.Write([]byte(msg))
 }
 
 func main() {

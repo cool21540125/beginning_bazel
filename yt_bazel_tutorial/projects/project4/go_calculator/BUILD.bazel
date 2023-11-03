@@ -1,0 +1,22 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "go_calculator",
+    srcs = [
+        "calculator.go",
+    ],
+    importpath = "project4/go_calculator",
+    visibility = [
+        "//projects/project4/go_web:__pkg__",
+    ],
+)
+
+go_test(
+    name = "go_calculator_test",
+    srcs = [
+        "calculator_test.go",
+    ],
+    embed = [
+        "go_calculator",
+    ],
+)
