@@ -14,7 +14,7 @@ py_library(
         "calculator.py"
     ],
     visibility = [
-        "//visibility:public"
+        "//ch4/python:__pkg__",
     ],
 )
 

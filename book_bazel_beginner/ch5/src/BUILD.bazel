@@ -1,5 +1,8 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
+load("@io_bazel_rules_python//python:defs.bzl", "py_binary")
+
+
 go_library(
     name = "transmission_object_go",
     srcs = [
@@ -23,6 +26,9 @@ java_library(
     srcs = [
         "TransmissionObject.java",
     ],
+    visibility = [
+        "//ch5/src:__pkg__",
+    ],
 )
 
 java_binary(
@@ -33,11 +39,9 @@ java_binary(
     ],
     deps = [
         "transmission_object_java",
-        "//third_party:gson",
+        "//ch5/third_party:gson",
     ]
 )
-
-load("@rules_python//python:defs.bzl", "py_binary")
 
 py_binary(
     name = "echo_client_py",

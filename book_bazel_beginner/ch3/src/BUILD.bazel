@@ -5,14 +5,14 @@ java_binary(
     ],
     deps = [
         ":LibraryExample",
-    ]
+    ],
 )
 
 java_library(
     name = "LibraryExample",
     srcs = [
         "IntMultiplier.java",
-    ]
+    ],
 )
 
 java_test(
@@ -20,7 +20,7 @@ java_test(
     srcs = ["IntMultiplierTest.java"],
     deps = [
         ":LibraryExample",
-        "//third_party:junit4",
+        "//ch3/third_party:junit4",
     ],
     test_class = "IntMultiplierTest",
 )
