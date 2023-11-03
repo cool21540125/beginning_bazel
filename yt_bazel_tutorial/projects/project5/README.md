@@ -8,16 +8,24 @@ cd yt_bazel_tutorial
 bazel run @yarn//:yarn
 
 
-### 
+### query
 bazel query @npm//... | grep jasmine
 bazel query @npm//... | grep express
 
 
-### 
+### build
+bazel build //projects/project5/node_web:node_web
+bazel build //projects/project5/node_web
+bazel build //projects/project5/node_calculator
+bazel build //projects/project5/...
+bazel build //projects/...
+
+
+### test
 bazel test //projects/project5/node_calculator/...
 bazel test //projects/...
 
 
-bazel build //projects/project5/node_web
+### run web
 bazel run //projects/project5/node_web
 ```

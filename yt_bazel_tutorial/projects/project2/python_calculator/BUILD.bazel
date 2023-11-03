@@ -5,7 +5,7 @@ py_library(
     ],
     # visibility = ["//visibility:public"],
     visibility = [
-        "//projects/project2/my-python-app:__pkg__",
+        "//projects/project2/python_web:__pkg__",
     ]
 )
 
