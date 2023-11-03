@@ -1,0 +1,19 @@
+py_library(
+    name = "calculator",
+    srcs = [
+        "calculator.py",
+    ],
+    visibility = [
+        "//projects/project6/python_web:__pkg__",
+    ]
+)
+
+py_test(
+    name = "calculator_test",
+    srcs = [
+        "calculator_test.py",
+    ],
+    deps = [
+        "//projects/project6/python_calculator:calculator",
+    ],
+)

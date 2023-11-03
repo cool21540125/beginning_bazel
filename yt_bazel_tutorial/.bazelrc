@@ -1,0 +1,2 @@
+# 因應 project6 的設定
+build --@io_bazel_rules_docker//transitions:enable=no
