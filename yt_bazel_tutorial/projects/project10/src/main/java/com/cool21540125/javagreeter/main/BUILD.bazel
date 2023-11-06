@@ -1,0 +1,11 @@
+java_binary(
+    name = "main",
+    srcs = [
+        "main.java",
+    ],
+    deps = [
+        # ":greeter",
+        "//projects/project10/src/main/java/com/cool21540125/javagreeter/greeter",
+    ],
+    main_class = "com.cool21540125.javagreeter.main.Main",
+)

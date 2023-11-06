@@ -1,0 +1,10 @@
+java_library(
+    name = "greeter",
+    # srcs = glob(["*.java"]),
+    srcs = ["Greeter.java"],
+    deps = [
+        "@maven//:com_github_javafaker_javafaker",
+    ],
+    # visibility = ["//visibility:public"],
+    visibility = ["//projects/project10/src/main/java/com/cool21540125/javagreeter/main:__pkg__"],
+)
