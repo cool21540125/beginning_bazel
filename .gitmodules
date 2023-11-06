@@ -4,3 +4,6 @@
 [submodule "codelabs"]
 	path = codelabs
 	url = git@github.com:cool21540125/codelabs.git
+[submodule "lab-bazel-mystery"]
+	path = lab-bazel-mystery
+	url = git@github.com:cool21540125/lab-bazel-mystery.git
