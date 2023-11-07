@@ -10,4 +10,10 @@ pytest
 
 bazel test //lib:test_prime
 bazel test //...
+
+
+### dependency graph
+bazel query --noimplicit_deps --notool_deps --output graph 'deps(//...)'
+# http://www.webgraphviz.com/
+
 ```
