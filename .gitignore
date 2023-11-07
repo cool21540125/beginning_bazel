@@ -36,3 +36,7 @@ eclipse-*bin/
 user.bazelrc
 
 node_modules
+
+# python
+__pycache__
+venv
