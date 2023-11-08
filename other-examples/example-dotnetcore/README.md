@@ -1,5 +1,5 @@
 
-- 因為我根本不懂他媽 dotnet core 的一大堆專業術語, 所以要再找時間惡補
+- 有一大堆 dotnet core 專業術語誇龍謀, 所以要再找時間惡補
     - https://blog.miniasp.com/post/2021/10/25/ASP-NET-Core-6-Project-Template-and-CSharp-10-New-Features
 
 ```bash
