@@ -1,0 +1,19 @@
+load(
+    "@rules_dotnet//dotnet:defs.bzl",
+    "csharp_binary",
+)
+
+csharp_binary(
+    name = "aspnetcore",
+    srcs = [
+        "Controllers/WeatherForecastController.cs",
+        "Program.cs",
+        "WeatherForecast.cs",
+    ],
+    project_sdk = "web",
+    target_frameworks = ["net6.0"],
+    targeting_packs = [
+        "@example_deps//microsoft.aspnetcore.app.ref",
+        "@example_deps//microsoft.netcore.app.ref",
+    ],
+)
