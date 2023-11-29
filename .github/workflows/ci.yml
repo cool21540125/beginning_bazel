@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: bazelbuild/setup-bazelisk@v2
+      - run: |
+          cd yt_bazel_tutorial
+          bazel build //...
+          bazel test //...
